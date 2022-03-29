@@ -2,72 +2,13 @@
   margin: 0;
 }
 
-/*.bg{
-    background-image: url(../img/forest_bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    width: 100%;
-    height: 100vh;
-}*/
-header {
-  font-family: "Architects Daughter", cursive;
-  z-index: 1000;
-}
-
 body {
-  background-image: url(../img/forest_bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 100vh;
   background-color: black;
-}
-
-/*.forest{
-    z-index: 1;
-    width: 100%;
-    position: relative;
-    top: 0;
-}*/
-.allnav {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2vw;
-}
-
-.fnav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5vw;
-}
-
-.home, .idk, .search {
-  margin: 2vw;
-  text-decoration: none;
-  color: white;
-}
-
-.snav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5vw;
-}
-
-.faq, .am, .contact {
-  margin: 2vw;
-  text-decoration: none;
-  color: white;
-}
-
-nav {
-  text-align: center;
 }
 
 .logo {
   max-width: 15vw;
   height: auto;
-  text-align: center;
 }
 
 .text {
@@ -76,21 +17,97 @@ nav {
   font-size: 3em;
 }
 
-@media screen and (max-width: 900px) and (-webkit-max-device-pixel-ratio: 2) {
-  .allnav {
-    display: grid;
-    grid-template: 1fr 1fr/20% 80%;
-  }
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 4fr;
+  -ms-grid-columns: 200px 4fr;
+      grid-template: 1fr 4fr / 200px 4fr;
+}
 
-  .fnav {
-    grid-column: 1;
-    grid-row: 1;
-    flex-direction: column;
-  }
+.cv, .home, .about {
+  text-decoration: none;
+  color: #3c4e8f;
+  margin-bottom: 10vh;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 5px;
+}
 
-  .snav {
-    grid-column: 1;
-    grid-row: 2;
-    flex-direction: column;
+.menu {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 5 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projets {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 2 / 2 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.opal, .truc, .nain {
+  text-decoration: none;
+  color: #3c4e8f;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 5px;
+}
+
+.pfolio {
+  background-color: grey;
+  height: 100vh;
+}
+
+.all:hover {
+  -webkit-animation: glow 2.5s linear infinite;
+          animation: glow 2.5s linear infinite;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
-}/*# sourceMappingURL=index.css.map */
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+}
+#left{
+    background-color: #1b3864;
+    width: 50%;
+    height: 100vh;
+    padding: 10px;
+    border: 10px solid #18345f;
+}
+.code-block{
+    display: block;
+}
+.code{
+    text-align: left;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: break-word;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    counter-reset: a;
+}
+.code-line::before{
+    counter-increment: a +1;
+    content: counter(a) "";
+    opacity: .3;
+    color: grey;
+    width: 2ch;
+    text-align: end;
+}
+.code-line{
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    margin-bottom: -7vh;
+}
+.code-point{
+    opacity: .5;
+    color: grey;
+}
+.code-title{
+    color: rgb(223, 84, 84);
+    font-weight: 500;
+}
+
+.code-ap{
+    color: rgba(255, 255, 255, 0.589);
+}
+.code-desc{
+    color: rgb(171, 134, 241);
+}
+.code-desc-lien{
+    color: rgb(77, 123, 223);
+    text-decoration: none;
+}
+.acc{
+    color: rgba(255, 255, 255, 0.637);
+}
+.code-date{
+    color: rgb(129, 238, 138);
+}
