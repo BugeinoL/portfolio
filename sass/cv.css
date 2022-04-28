@@ -8,6 +8,7 @@ body{
     justify-content: left;
     flex-direction: column;
 }
+/*Left*/
 #left{
     background-color: #1b3864;
     width: 50%;
@@ -66,4 +67,27 @@ body{
 }
 .code-date{
     color: rgb(129, 238, 138);
+}
+.code-mix{
+    color: blue;
+}
+
+/*Right*/
+#right{
+    width: 50%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 790px){
+    body{
+        display: block;
+    }
+    #left{
+        width: inherit;
+        height: inherit;
+    }
+    #right{
+        width: inherit;
+        height: inherit;
+    }
 }

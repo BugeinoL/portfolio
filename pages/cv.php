@@ -19,38 +19,45 @@
                 <span class="code-line acc"> {</span>
                 <span class="code-line">
                     <span class="code-point"> .. </span>
-                    <span class="code-title">nom</span>
-                    <span class="code-ap">:&nbsp"</span>
+                    <span class="code-title">$nom</span>
+                    <span class="code-ap">:&nbsp</span>
                     <span class="code-desc">Bétrancourt Lonicera</span>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">;</span>
+                </span>
+                <span class="code-line">
+                    <span class="code-point"> -</span>
+                </span>
+                <span class="code-line">
+                    <span class="code-mix">@mixin</span>
+                    <span class="code-date"> Informations</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> .. </span>
                     <span class="code-title">metier</span>
                     <span class="code-ap">:&nbsp"</span>
                     <span class="code-desc">Développeur Web</span>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">";</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> .. </span>
                     <span class="code-title">adresse</span>
                     <span class="code-ap">:&nbsp"</span>
                     <span class="code-desc">22 route de longvilliers 62630 Frencq</span>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">";</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> .. </span>
                     <span class="code-title">telephone</span>
                     <span class="code-ap">:&nbsp"</span>
                     <span class="code-desc">06.28.37.88.75</span>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">";</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> .. </span>
                     <span class="code-title">e-mail</span>
                     <span class="code-ap">:&nbsp"</span>
                     <a class="code-desc-lien" href="mailto:betrancourt.lonicera@gmail.com"><span class="code-desc-lien">betrancourt.lonicera@gmail.com</span></a>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">";</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> -</span>
@@ -65,14 +72,14 @@
                     <span class="code-date">2021-2022</span>
                     <span class="code-ap">:&nbsp"</span>
                     <span class="code-desc">Formation Développeur Web et Web Mobile</span>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">";</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> .... </span>
                     <span class="code-date">2019-2020</span>
                     <span class="code-ap">:&nbsp"</span>
                     <span class="code-desc">Baccalauréat STMG spécialité Gestion Finance</span>
-                    <span class="code-ap">",</span>
+                    <span class="code-ap">";</span>
                 </span>
                 <span class="code-line">
                     <span class="code-point"> .. </span>
@@ -98,7 +105,8 @@
     </section>
 
     <section id="right">
-
+        <span class="name">L</span>
+        <span class="name">O</span>
     </section>
 </body>
 </html>

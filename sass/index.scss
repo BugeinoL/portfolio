@@ -1,57 +1,32 @@
-*{
-    margin: 0;
+$fc: rgb(236, 157, 157);
+$sc: #3c4e8f;
+$tc: #07123A;
+
+@mixin test{
+    border: 2px solid red;
 }
-body{
-    background-color: black;
-}
-.logo{
-    max-width: 15vw;
-    height: auto;
-}
-.text{
-    margin-top: 110vh;
-    color: white;
-    font-size: 3em;
-}
-main{
-    display: grid;
-    grid-template: 1fr 4fr / 200px 4fr;
-}
-.cv, .home, .about{
-    text-decoration: none;
-    color: #3c4e8f;
-    margin-bottom: 10vh;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-size: 1.3em;
-    letter-spacing: 5px;
-}
-.menu{
-    grid-area: 2 / 1 / 5 / 2;
+@mixin flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
-.projets{
-    grid-area: 1 / 2 / 2 / 5;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+*{
+    margin: 0;
+    overflow: hidden;
 }
-.opal, .truc, .nain{
-    text-decoration: none;
-    color: #3c4e8f;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-size: 1.3em;
-    letter-spacing: 5px;
+body{
+    background-color: $tc;
 }
-.pfolio{
-    background-color: grey;
-    height: 100vh;
+.logo{
+    max-width: 10vw;
+    height: auto;
 }
+
 .all:hover{
     animation: glow 2.5s linear infinite;
 }
+
 @keyframes glow {
     0% {
       filter: hue-rotate(0deg);
@@ -61,6 +36,31 @@ main{
     }
 }
 
-@media screen and (max-width: 900px) and (-webkit-max-device-pixel-ratio: 2){
-    
+.name{
+    color: $sc;
+    font-size: 2.5em;
+    text-shadow: 5px 5px 4px white;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    @include flex;
+    cursor: pointer;
+}
+.name::selection{
+    color: white;
+    text-shadow: 5px 5px 4px black;
+}
+//align-self
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    @include test;
 }
