@@ -6,15 +6,15 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: left;
-    flex-direction: column;
+    flex-direction: row;
 }
 /*Left*/
 #left{
-    background-color: #1b3864;
+    background-color: #25170a; /*#1b3864*/
     width: 50%;
     height: 100vh;
     padding: 10px;
-    border: 10px solid #18345f;
+    border: 10px solid #2c1b0c;
 }
 .code-block{
     display: block;
@@ -47,16 +47,19 @@ body{
     opacity: .5;
     color: grey;
 }
+.code-name{
+   color: #6d431f;
+}
 .code-title{
-    color: rgb(223, 84, 84);
+    color: #395365;
     font-weight: 500;
 }
 
 .code-ap{
-    color: rgba(255, 255, 255, 0.589);
+    color: rgba(255, 255, 255, 0.589)
 }
 .code-desc{
-    color: rgb(171, 134, 241);
+    color: rgb(192, 163, 245);
 }
 .code-desc-lien{
     color: rgb(77, 123, 223);
@@ -65,17 +68,51 @@ body{
 .acc{
     color: rgba(255, 255, 255, 0.637);
 }
-.code-date{
-    color: rgb(129, 238, 138);
+.code-mixtext{
+    color: #f5f3ba;
 }
 .code-mix{
-    color: blue;
+    color: #6d431f;
 }
 
 /*Right*/
 #right{
     width: 50%;
     height: 100vh;
+}
+h1{
+    color: #395365;
+}
+.diag-box, .diag-box2{
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+} 
+.diagram{
+    stroke: #4CC790;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+.diagram2{
+    stroke: #4CC790;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress2 1s ease-out forwards;
+}
+ 
+@keyframes progress{
+    0%{
+      stroke-dasharray: 0 100;
+    }
+}
+@keyframes progress2{
+    0%{
+      stroke-dasharray: 0 100;
+    }
 }
 
 @media screen and (max-width: 790px){

@@ -50,17 +50,9 @@ body{
     text-shadow: 5px 5px 4px black;
 }
 //align-self
-
-
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-.circle{
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    @include test;
 }
