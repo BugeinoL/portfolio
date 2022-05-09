@@ -135,6 +135,7 @@
         </pre>
 
     </section>
+    
 
     <section id="right">
         <h1>Compétences</h1>
