@@ -1,6 +1,7 @@
 $fc: rgb(236, 157, 157);
 $sc: #3c4e8f;
-$tc: #07123A;
+$bg: #0A0403;
+$text: #fff;
 
 @mixin test{
     border: 2px solid red;
@@ -13,46 +14,100 @@ $tc: #07123A;
 
 *{
     margin: 0;
-    overflow: hidden;
 }
-body{
-    background-color: $tc;
+*::-webkit-scrollbar{
+    display: none;
 }
-.logo{
-    max-width: 10vw;
-    height: auto;
-}
-
-.all:hover{
-    animation: glow 2.5s linear infinite;
-}
-
-@keyframes glow {
-    0% {
-      filter: hue-rotate(0deg);
-    }
-    100% {
-      filter: hue-rotate(360deg);
-    }
-}
-
-.name{
-    color: $sc;
-    font-size: 2.5em;
-    text-shadow: 5px 5px 4px white;
-    font-family: 'Lobster', cursive;
-    letter-spacing: 5px;
-    @include flex;
-    cursor: pointer;
-}
-.name::selection{
-    color: white;
-    text-shadow: 5px 5px 4px black;
-}
-//align-self
-.main{
+.header{
+    background-color: rgba(0, 0, 0, 0.678);
+    position: sticky;
+    top: 0vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    height: 7vh;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+}
+section{
+    height: 100vh;
+}
+main{
+    position: relative;
+    top: -7vh;
+}
+.home{
+    background-image: url(../img/setup.jpg);
+    filter: hue-rotate(70deg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100vw;
+    background-color: $bg;
+    z-index: 1;
+}
+.info{
+    background-color: $bg;
+    color: aliceblue;
+}
+.name{
+    color: $text;
+    font-size: 2.5em;
+    font-family: 'Gentium Plus', serif;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.web{
+    color: $text;
+    font-size: 2.5em;
+    font-family: 'Gentium Plus', serif;
+    position: absolute;
+    top: 20%;
+    left: 54%;
+}
+a{
+    text-decoration: none;
+    color: $text;
+}
+.accueil, .sign, .setup{
+    transition: ease-in-out .5s;
+}
+.accueil:hover, .sign:hover, .setup:hover{
+    color: #4869df;
+}
+.deroule{
+    position: relative;
+    display: inline-block;
+}
+.nav{
+    display: none;
+    position: absolute;
+}
+.nav a{
+    display: block;
+}
+.deroule:hover .nav{
+    display: block;
+}
+.linkedin{
+    filter: hue-rotate(300deg);
+    height: 5vh;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+.instagram{
+    filter: hue-rotate(200deg);
+    height: 5vh;
+    position: absolute;
+    top: 35%;
+    left: 49%;
+}
+.gmail{
+    filter: hue-rotate(120deg);
+    height: 5vh;
+    position: absolute;
+    top: 35%;
+    left: 62%;
 }

@@ -11,12 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Italianno&family=Stick+No+Bills:wght@200&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400&family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logo_small_icon_only_inverted.png" type="image">
     <link rel="stylesheet" href="./sass/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Gentium+Plus:ital@1&display=swap" rel="stylesheet">
     <meta name="description" content="Bonjour, je m'appelle Lonicera et je viens tout juste de terminer ma formation de développeur web.">
     <meta name="author" content="Bétrancourt Lonicera">
+    <link rel="stylesheet" href="./fa/css/all.css">
     <title>Lonicera Bétrancourt</title>
 </head>
 <body>

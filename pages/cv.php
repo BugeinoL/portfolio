@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sass/cv.css">
+    <link rel="stylesheet" href="./cv.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -50,7 +50,7 @@
                     <span class="code-point"> ...... </span>
                     <span class="code-title">adresse</span>
                     <span class="code-ap">:&nbsp</span>
-                    <span class="code-desc">Boulevard des resistants, 59550 Landrecies</span>
+                    <span class="code-desc">Appart 5 Prévert, 6 Boulevard des resistants, 59550 Landrecies</span>
                     <span class="code-ap">;</span>
                 </span>
                 <span class="code-line">

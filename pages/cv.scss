@@ -1,3 +1,18 @@
+$ttl: #395365;
+$desc: #c0a3f5;
+$mix: #6d431f;
+$mixt: #f5f3ba;
+$selec: #112580;
+
+@mixin test{
+    border: 2px solid red;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,11 +25,11 @@ body{
 }
 /*Left*/
 #left{
-    background-color: #3a2410; /*#1b3864*/
+    background-color: #122441; 
     width: 50%;
     height: 100vh;
     padding: 10px;
-    border: 10px solid #472c14;
+    border: 10px solid #0c192c;
 }
 .code-block{
     display: block;
@@ -51,7 +66,7 @@ body{
    color: #6d431f;
 }
 .code-title{
-    color: #395365;
+    color: $ttl;
     font-weight: 500;
 }
 
@@ -59,7 +74,7 @@ body{
     color: rgba(255, 255, 255, 0.589)
 }
 .code-desc{
-    color: rgb(192, 163, 245);
+    color: $desc;
 }
 .code-desc-lien{
     color: rgb(77, 123, 223);
@@ -69,12 +84,14 @@ body{
     color: rgba(255, 255, 255, 0.637);
 }
 .code-mixtext{
-    color: #f5f3ba;
+    color: $mixt;
 }
 .code-mix{
-    color: #6d431f;
+    color: $mix;
 }
-
+code.title::selection{
+    color: $selec;
+}
 /*Right*/
 #right{
     width: 50%;
@@ -115,16 +132,22 @@ h1{
     }
 }
 
-@media screen and (max-width: 790px){
+@media screen and (max-width: 1060px){
     body{
         display: block;
     }
     #left{
         width: inherit;
         height: inherit;
+        width: 20vw;
     }
     #right{
         width: inherit;
         height: inherit;
+    }
+}
+@media screen and (min-width: 1060px) and (max-width: 1700px){
+    .code-line{
+        font-size: .7em;
     }
 }

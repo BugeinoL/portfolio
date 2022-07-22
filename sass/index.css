@@ -1,70 +1,131 @@
 * {
   margin: 0;
-  overflow: hidden;
 }
 
-body {
-  background-color: #07123A;
+*::-webkit-scrollbar {
+  display: none;
 }
 
-.logo {
-  max-width: 10vw;
-  height: auto;
+.header {
+  background-color: rgba(0, 0, 0, 0.678);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 7vh;
+  color: white;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 100;
 }
 
-.all:hover {
-  -webkit-animation: glow 2.5s linear infinite;
-          animation: glow 2.5s linear infinite;
+section {
+  height: 100vh;
 }
 
-@-webkit-keyframes glow {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
+main {
+  position: relative;
+  top: -7vh;
 }
 
-@keyframes glow {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
+.home {
+  background-image: url(../img/setup.jpg);
+  -webkit-filter: hue-rotate(70deg);
+          filter: hue-rotate(70deg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100vw;
+  background-color: #0A0403;
+  z-index: 1;
 }
+
+.info {
+  background-color: #0A0403;
+  color: aliceblue;
+}
+
 .name {
-  color: #3c4e8f;
+  color: #fff;
   font-size: 2.5em;
-  text-shadow: 5px 5px 4px white;
-  font-family: "Lobster", cursive;
-  letter-spacing: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  font-family: 'Gentium Plus', serif;
+  position: absolute;
+  top: 20%;
+  left: 35%;
 }
 
-.name::-moz-selection {
-  color: white;
-  text-shadow: 5px 5px 4px black;
+.web {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: 'Gentium Plus', serif;
+  position: absolute;
+  top: 20%;
+  left: 54%;
 }
 
-.name::selection {
-  color: white;
-  text-shadow: 5px 5px 4px black;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.accueil, .sign, .setup {
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
-circle {
-  fill: #ec9d9d;
-  stroke: #3c4e8f;
-  stroke-width: 15;
-}/*# sourceMappingURL=index.css.map */
+.accueil:hover, .sign:hover, .setup:hover {
+  color: #4869df;
+}
+
+.deroule {
+  position: relative;
+  display: inline-block;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+}
+
+.nav a {
+  display: block;
+}
+
+.deroule:hover .nav {
+  display: block;
+}
+
+.linkedin {
+  -webkit-filter: hue-rotate(300deg);
+          filter: hue-rotate(300deg);
+  height: 5vh;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+.instagram {
+  -webkit-filter: hue-rotate(200deg);
+          filter: hue-rotate(200deg);
+  height: 5vh;
+  position: absolute;
+  top: 35%;
+  left: 49%;
+}
+
+.gmail {
+  -webkit-filter: hue-rotate(120deg);
+          filter: hue-rotate(120deg);
+  height: 5vh;
+  position: absolute;
+  top: 35%;
+  left: 62%;
+}
+/*# sourceMappingURL=index.css.map */

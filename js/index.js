@@ -1,8 +1,8 @@
-let loni = $(".name");
+/*let loni = $(".name");
 let bubu = $(".info");
 let app = $(".appear");
 
-/*
+
 $(document).ready(function(){
     loni.click(function(){
         bubu.css({
@@ -15,7 +15,7 @@ $(document).ready(function(){
             visibility: "hidden"
         })
     })
-})*/
+})
 
 function openSect(){
     let dis = document.getElementById("disappear");
@@ -51,6 +51,35 @@ $(document).ready(function(){
     $(".hidinfo").mouseenter(function closeInfo(){
         $('hidinfo').css({
             display: "none",
+        })
+    })
+})
+*/
+
+$(document).ready(function(){
+    $(".blue").click(function(){
+        $(".home").css({
+            filter: "hue-rotate(70deg)",
+        })
+    })
+    $(".red").click(function(){
+        $(".home").css({
+            filter: "hue-rotate(190deg)",
+        })
+    })
+    $(".purple").click(function(){
+        $(".home").css({
+            filter: "hue-rotate(100deg)",
+        })
+    })
+    $(".green").click(function(){
+        $(".home").css({
+            filter: "hue-rotate(320deg)",
+        })
+    })
+    $(".yellow").click(function(){
+        $(".home").css({
+            filter: "hue-rotate(280deg)",
         })
     })
 })
