@@ -11,17 +11,11 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   height: 7vh;
-  color: white;
+  color: rgb(255, 255, 255);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   z-index: 100;
@@ -38,8 +32,7 @@ main {
 
 .home {
   background-image: url(../img/setup.jpg);
-  -webkit-filter: hue-rotate(70deg);
-          filter: hue-rotate(70deg);
+  filter: hue-rotate(70deg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100vw;
@@ -55,7 +48,7 @@ main {
 .name {
   color: #fff;
   font-size: 2.5em;
-  font-family: 'Gentium Plus', serif;
+  font-family: "Gentium Plus", serif;
   position: absolute;
   top: 20%;
   left: 35%;
@@ -64,7 +57,7 @@ main {
 .web {
   color: #fff;
   font-size: 2.5em;
-  font-family: 'Gentium Plus', serif;
+  font-family: "Gentium Plus", serif;
   position: absolute;
   top: 20%;
   left: 54%;
@@ -76,8 +69,7 @@ a {
 }
 
 .accueil, .sign, .setup {
-  -webkit-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
 .accueil:hover, .sign:hover, .setup:hover {
@@ -103,8 +95,7 @@ a {
 }
 
 .linkedin {
-  -webkit-filter: hue-rotate(300deg);
-          filter: hue-rotate(300deg);
+  filter: hue-rotate(300deg);
   height: 5vh;
   position: absolute;
   top: 35%;
@@ -112,8 +103,7 @@ a {
 }
 
 .instagram {
-  -webkit-filter: hue-rotate(200deg);
-          filter: hue-rotate(200deg);
+  filter: hue-rotate(200deg);
   height: 5vh;
   position: absolute;
   top: 35%;
@@ -121,11 +111,17 @@ a {
 }
 
 .gmail {
-  -webkit-filter: hue-rotate(120deg);
-          filter: hue-rotate(120deg);
+  filter: hue-rotate(120deg);
   height: 5vh;
   position: absolute;
   top: 35%;
   left: 62%;
 }
-/*# sourceMappingURL=index.css.map */
+
+#test {
+  color: red;
+}
+
+.re {
+  color: blue;
+}/*# sourceMappingURL=index.css.map */

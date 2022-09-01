@@ -23,12 +23,13 @@ require './include/header.php';
     <section class="home">
         <h1 class="name">Lonicera</h1>
         <h2 class="web">Web Developpeur</h2>
-        <a href="https://www.linkedin.com/in/b%C3%A9trancourt-lonicera-762b5a194/"><img src="./img/linkedin.png" alt="" class="linkedin"></a>
-        <a href="https://www.instagram.com/btc.lonicera/"><img src="./img/instagram.png" alt="" class="instagram"></a>
-        <a href=""><img src="./img/gmail.png" alt="" class="gmail"></a>
+        
     </section>
     <section class="info">
         <h2>Tralalilala</h1>
+        <span id="test" class="re">
+bim
+        </span>
     </section>
 </main>
 
