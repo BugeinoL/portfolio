@@ -134,4 +134,13 @@ a {
     background-image: url(../img/portable.jpg);
   }
 }
+
+@media only screen and (min-width: 376px) and (max-width: 799px) {
+  #test {
+    color: red;
+  }
+  .re {
+    color: blue;
+  }
+}
 /*# sourceMappingURL=index.css.map */

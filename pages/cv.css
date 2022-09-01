@@ -4,19 +4,10 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: row;
 }
 
 /*Left*/
@@ -39,33 +30,28 @@ body {
   word-spacing: normal;
   word-break: normal;
   word-wrap: break-word;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   counter-reset: a;
 }
 
 .code-line::before {
-  counter-increment: a +1;
+  counter-increment: a1;
   content: counter(a) "";
-  opacity: .3;
+  opacity: 0.3;
   color: grey;
   width: 2ch;
   text-align: end;
 }
 
 .code-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  align-content: center;
+  justify-content: left;
   margin-bottom: -7vh;
 }
 
 .code-point {
-  opacity: .5;
+  opacity: 0.5;
   color: grey;
 }
 
@@ -87,7 +73,7 @@ body {
 }
 
 .code-desc-lien {
-  color: #4d7bdf;
+  color: rgb(77, 123, 223);
   text-decoration: none;
 }
 
@@ -157,19 +143,16 @@ h1 {
     stroke-dasharray: 0 100;
   }
 }
-
 @-webkit-keyframes progress2 {
   0% {
     stroke-dasharray: 0 100;
   }
 }
-
 @keyframes progress2 {
   0% {
     stroke-dasharray: 0 100;
   }
 }
-
 @media screen and (max-width: 1060px) {
   body {
     display: block;
@@ -184,10 +167,8 @@ h1 {
     height: inherit;
   }
 }
-
 @media screen and (min-width: 1060px) and (max-width: 1700px) {
   .code-line {
-    font-size: .7em;
+    font-size: 0.7em;
   }
-}
-/*# sourceMappingURL=cv.css.map */
+}/*# sourceMappingURL=cv.css.map */
