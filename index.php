@@ -4,7 +4,7 @@ require './include/header.php';
 
 <header class="header">
     <a href="#" class="accueil">Accueil</a>
-    <a href="#" class="sign">Sign in</a>
+    <a href="#" class="apropos">A propos</a>
 
     <div class="deroule">
         <a href="#" class="setup">Setup</a>
