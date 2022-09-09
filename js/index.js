@@ -55,7 +55,7 @@ $(document).ready(function(){
     })
 })
 */
-
+/*
 $(document).ready(function(){
     $(".blue").click(function(){
         $(".home").css({
@@ -82,4 +82,23 @@ $(document).ready(function(){
             filter: "hue-rotate(280deg)",
         })
     })
+})*/
+
+const navigation = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+
+   if(window.scrollY > 30){
+    navigation.classList.add('anim-nav');
+   } else{
+    navigation.classList.remove('anim-nav');
+   }
+
+})
+
+const menuResp = document.querySelector(".fas");
+const navAll = document.querySelector(".navall");
+
+menuResp.addEventListener('click', () =>{
+navAll.classList.toggle('menu-responsive')
 })

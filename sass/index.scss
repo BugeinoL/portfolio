@@ -1,6 +1,4 @@
-$fc: rgb(236, 157, 157);
-$sc: #3c4e8f;
-$bg: #0A0403;
+$bg: #000000;
 $text: #fff;
 
 @mixin test{
@@ -14,114 +12,159 @@ $text: #fff;
 
 *{
     margin: 0;
+    padding: 0;
 }
 *::-webkit-scrollbar{
     display: none;
-}
-.header{
-    background-color: rgba(0, 0, 0, 0.678);
-    position: sticky;
-    top: 0vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 7vh;
-    color: rgb(255, 255, 255);
-    backdrop-filter: blur(2px);
-    z-index: 100;
-}
-section{
-    height: 100vh;
-}
-main{
-    position: relative;
-    top: -7vh;
-}
-.home{
-    background-image: url(../img/setup.jpg);
-    filter: hue-rotate(70deg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 100vw;
-    background-color: $bg;
-    z-index: 1;
-}
-.info{
-    background-color: $bg;
-    color: aliceblue;
-}
-.name{
-    color: $text;
-    font-size: 2.5em;
-    font-family: 'Gentium Plus', serif;
-    position: absolute;
-    top: 20%;
-    left: 35%;
-}
-.web{
-    color: $text;
-    font-size: 2.5em;
-    font-family: 'Gentium Plus', serif;
-    position: absolute;
-    top: 20%;
-    left: 54%;
 }
 a{
     text-decoration: none;
     color: $text;
 }
-.accueil, .sign, .setup{
-    transition: ease-in-out .5s;
+li{
+    list-style: none;
 }
-.accueil:hover, .sign:hover, .setup:hover{
-    color: #4869df;
+
+//Header nav
+nav{
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+    z-index: 1000;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
 }
-.deroule{
+nav .logo{
+    font-size: 2em;
+}
+nav .navall li{
+    margin: 0 50px;
+    font-size: 1.1em;
+}
+nav .navall li a.active{
+    color: red;
+}
+nav .navall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+nav .fas{
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    nav{
+        padding: 0;
+    }
+    nav .logo{
+        position: absolute;
+        top: 7px;
+        left: 25px;
+    }
+    nav .navall{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(3px);
+        margin-left: -100%;
+        transition: all 1.5s ease-in-out;
+    }
+    nav .fas{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    nav .navall{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.575);
+    }
+    nav .navall li{
+        margin: 50px 0;
+        font-size: 1.1em;
+    }
+    nav .menu-responsive{
+        margin-left: 0;
+    }
+}
+
+
+.anim-nav{
+    background: rgba(0, 0, 0, 0.767);
+    color: $bg;
+}
+
+#deroule{
     position: relative;
     display: inline-block;
 }
-.nav{
+.setnav{
     display: none;
     position: absolute;
 }
-.nav a{
+.setnav a{
     display: block;
 }
-.deroule:hover .nav{
+#deroule:hover .setnav{
     display: block;
 }
-.linkedin{
-    filter: hue-rotate(300deg);
-    height: 5vh;
-    position: absolute;
-    top: 35%;
-    left: 35%;
-}
-.instagram{
-    filter: hue-rotate(200deg);
-    height: 5vh;
-    position: absolute;
-    top: 35%;
-    left: 49%;
-}
-.gmail{
-    filter: hue-rotate(120deg);
-    height: 5vh;
-    position: absolute;
-    top: 35%;
-    left: 62%;
-}
-@media screen and (max-width: 375px) {
-    .home{
-        background-image: url(../img/portable.jpg);
-    }
-}
-@media only screen and (min-width: 376px) and (max-width: 799px) {
 
-#test{
-    color: red;
+
+//Section 1
+
+section{
+    height: 100vh;
+    width: 100%;
 }
-.re{
-    color: blue;
+.home{
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: $text;
+    z-index: 900;
 }
+.name{
+    color: $text;
+    font-size: 3em;
+    position: absolute;
+    top: 40vh;
+    left: 43vw;
 }
+
+@media screen and (max-width: 900px){
+    //Section 1 
+    .name{
+        position: absolute;
+        top: 20vh;
+        left: 10vw;
+        font-size: 2em;
+    }
+    
+
+    
+}
+
+//Section 2
+
