@@ -21,43 +21,69 @@ a{
     text-decoration: none;
     color: $text;
 }
-li{
-    list-style: none;
-}
 
+body.light{
+    background-color: white;
+    color: black;
+}
+body.dark{
+    background-color: black;
+    color: white;
+}
 //Header nav
 nav{
+    position: fixed;
     width: 100%;
     height: 60px;
-    padding: 0 20px;
-    position: fixed;
-    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px 0 20px;
+    background: transparent;
     box-sizing: border-box;
     transition: all .5s ease-in-out;
     z-index: 1000;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
+    letter-spacing: 2px;
 }
-nav .logo{
-    font-size: 2em;
-}
-nav .navall li{
-    margin: 0 50px;
-    font-size: 1.1em;
-}
-nav .navall li a.active{
-    color: red;
-}
-nav .navall{
+.logo{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 20px;
+    justify-content: center;
 }
+.logo img{
+    width: 50px;
+}
+
+.logo span{
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.links a{
+    margin: 0 20px;
+    font-size: 1.1em;
+    display: inline-block;
+    position: relative;
+}
+.links a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #bdbdbd;
+    transition: transform .3s ease-out;
+}
+.links a:hover::after{
+    transform: scale(1);
+}
+
 nav .fas{
     font-size: 20px;
     color: white;
@@ -68,12 +94,15 @@ nav .fas{
     nav{
         padding: 0;
     }
-    nav .logo{
+    .logo img{
         position: absolute;
-        top: 7px;
         left: 25px;
+        width: 60px;
     }
-    nav .navall{
+    .logo span{
+        display: none;
+    }
+    .links{
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -83,22 +112,22 @@ nav .fas{
         justify-content: center;
         align-items: center;
         backdrop-filter: blur(3px);
-        margin-left: -100%;
-        transition: all 1.5s ease-in-out;
+        margin-left: -110%;
     }
     nav .fas{
         display: block;
         position: absolute;
         top: 20px;
         right: 25px;
+        z-index: 1;
     }
-    nav .navall{
+    nav .links{
         position: absolute;
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.575);
     }
-    nav .navall li{
+    nav .links a{
         margin: 50px 0;
         font-size: 1.1em;
     }
@@ -109,7 +138,7 @@ nav .fas{
 
 
 .anim-nav{
-    background: rgba(0, 0, 0, 0.767);
+    background: rgba(0, 0, 0, 0.527);
     color: $bg;
 }
 
@@ -135,7 +164,7 @@ section{
     height: 100vh;
     width: 100%;
 }
-.home{
+.accueil{
     background-image: url(../img/wallpaper.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
