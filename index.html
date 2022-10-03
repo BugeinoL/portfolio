@@ -17,50 +17,82 @@
     <title>Lonicera</title>
 </head>
 
-<body>
+<body class="light">
 
-<nav>
-    <a href="#" class="logo">Portfolio</a>
-    <ul class="navall">
-        <li><a href="#" class="accueil active">Accueil</a></li>
-        <li><a href="#about" class="apropos">A propos</a></li>
-        <li id="deroule">
-            <a href="#site" class="sites">Sites</a>
+    <nav>
+        <a href="#" class="logo" aria-label="visit home">
+            <img src="./img/wolf.logo.png" alt="logo icon">
+            <span>Lonicera</span>
+        </a>
+        <i class="fas fa-ellipsis-v">
+            <a href="#" class="menu"></a>
+        </i>
+
+        <div class="links">
+            <a href="#" class="home active">Home</a>
+            <a href="#about" class="about">About</a>
+            <a href="#site" id="deroule" class="sites">Sites</a>
             <div class="setnav">
-                <a href="#" class="blue">Blue</a>
-                <a href="#" class="red">Red</a>
-                <a href="#" class="purple">Purple</a>
-                <a href="#" class="green">Green</a>
-                <a href="#" class="yellow">Yellow</a>
+                <a href="#" class="portfolio">Opal'Info</a>
+                <a href="#" class="portfolio">Pierre</a>
+                <a href="#" class="portfolio">Nainstitution</a>
             </div>
+            <a href="#" class="langage">Langage</a>
+            <a href="#" class="day">&#x1F311</a>
+        </div>
+    </nav>
 
-        </li>
-    </ul>
-    <i class="fas fa-ellipsis-v"><a href="#" class="menu"></a></i>
-</nav>
+    <main>
+        <section id="accueil" class="accueil">
+            <h1 class="name"> <br> </h1>
+        </section>
 
-<main>
-    <section id="home" class="home">
-        <h1 class="name">Lonicera <br> Développeuse Web</h1>
-    </section>
-
-<!-- <i class="fal fa-phone-laptop"></i> -->
-
+        <!-- <i class="fal fa-phone-laptop"></i> -->
 
 
-    <section id="about" class="info">
-        
 
-    </section>
+        <section id="about" class="info">
+            <p>test</p>
 
+        </section>
 
 
 
 
-    <section id="site" class="log">
-        
-    </section>
-</main>
+
+        <section id="site" class="log">
+            <!-- <p class="test">test</p> -->
+            <div class="projects">
+                <div class="opal" id="project">
+                    <img src="./img/banner-opal.JPG" alt="" class="pic-opal">
+                    <div class="contain-project">
+                        <h1>Opal'Info</h1>
+                        <p class="desc-opal">Site entièrement conçu en HTML/CSS sans responsive</p>
+                        <button class="more">See</button>
+                    </div>
+                </div>
+
+                <div class="truc" id="project">
+                    <img src="./img/logob.gif" alt="" class="pic-truc">
+                    <div class="contain-project" id="contain-project-truc">
+                        <h1>truC</h1>
+                        <p class="desc-truc">Site de vente d'objets inutiles. HTML/CSS, JavaScript et PhP</p>
+                        <button class="more">See</button>
+                    </div>
+                </div>
+
+                <div class="nain" id="project">
+                    <img src="./img/881259.png" alt="" class="pic-nain">
+                    <div class="contain-project">
+                        <h1>Nainsitution</h1>
+                        <p class="desc-nain">Site front-end + back-end, description d'aventuriers connus</p>
+                        <button class="more">See</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 
 </body>
 <script src="./js/stockjs/jquery-3.6.0.min.js"></script>

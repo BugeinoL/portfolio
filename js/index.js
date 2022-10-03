@@ -97,8 +97,35 @@ window.addEventListener('scroll', () => {
 })
 
 const menuResp = document.querySelector(".fas");
-const navAll = document.querySelector(".navall");
+const navAll = document.querySelector(".links");
 
 menuResp.addEventListener('click', () =>{
 navAll.classList.toggle('menu-responsive')
+})
+
+//Enlève les animations au cahngement de résolution de l'écran
+const navLinks = document.querySelector(".menu-responsive")
+new ResizeObserver(entries => {
+    if(entries[0].contentRect.width <= 900){
+        navLinks.style.transition = "transform all 1.5s ease-in-out";
+    }else{
+        navLinks.style.transition = "none"
+    }
+}).observe(document.body)
+
+const theme = document.querySelector('.day');
+
+theme.addEventListener('click', () => {
+    const body = document.body;
+
+    if (body.classList.contains('dark')){
+        body.classList.add('light')
+        body.classList.remove('dark')
+        theme.innerHTML = "&#x1F311"
+
+    }else if(body.classList.contains('light')){
+        body.classList.add('dark')
+        body.classList.remove('light')
+        theme.innerHTML = "&#x1F31E"
+    }
 })
